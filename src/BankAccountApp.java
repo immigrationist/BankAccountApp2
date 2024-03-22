@@ -69,7 +69,7 @@ public class BankAccountApp
                     System.out.println(bankAccount1.getCurrBalance());
                     break;
                 case 4:
-                    System.out.println("QUIT");
+                    System.out.println("RENDERING INFORMATION...");
                     break;
                 default:
             }

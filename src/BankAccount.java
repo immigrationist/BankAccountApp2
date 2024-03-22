@@ -70,9 +70,9 @@ public class BankAccount
 
     public boolean withdrawMoney(double newMoney)
     {
-        boolean success = true;
+        boolean success = false;
 
-        if(currBalance > newMoney && newMoney < withdrawLimit)
+        if(currBalance >= newMoney && newMoney <= withdrawLimit)
         {
             if (withdrawLimit <= withdrawMoney)
             {
@@ -89,7 +89,7 @@ public class BankAccount
         return  success;
     }
 
-    public boolean depositMoney(int newMoney)
+    public boolean depositMoney(double newMoney)
     {
         if(newMoney > 0)
             currBalance += newMoney;
